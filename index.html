@@ -20,7 +20,9 @@
   <body>
 
     <div class="d-flex justify-content-end p-3">
-      <a href="#" class="btn btn-outline-dark position-relative">🛒Carrinho</a>
+      <a href="#" class="btn btn-outline-dark position-relative">🛒Carrinho
+        <span id="cart-count" class="position-absolute top-0 start-100 traslate-middle badge rounded-pill bg-danger"></span>
+      </a>
 
     </div>
 
@@ -68,6 +70,7 @@
                       <h5 class="card-title">Laranja</h5>
                       <p class="card-text">Adicionar descrição.</p>
                       <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Saiba mais</button>
+                      <a href="#" class="btn btn-success" onclick="AdicionarAocarrinho(); alert('Pedrotudo adicionado ao carrinho!')">comprar</a>
                     </div>
                 </div>
             </div>
