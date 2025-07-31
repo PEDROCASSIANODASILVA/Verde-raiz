@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script>
+   let carrinho = 0;
+   function AdicionarAocarrinho() {
+    carrinho++;
+    document.getElementById("cart-count").textContent = carrinho;
+   }     
+  </script>
+
+
+
+  <body>
+
+    <div class="d-flex justify-content-end p-3">
+      <a href="#" class="btn btn-outline-dark position-relative">🛒Carrinho</a>
+
+    </div>
+
+    <header class="container text-center border-bottom pb-2 mb-7">
+        <h1>Verde Raiz</h1>
+        <p>Bem-vindo(a) ao Verde Raiz!
+
+            Aqui, onde os sabores autênticos se encontram com a pureza da terra, celebramos a essência dos alimentos orgânicos cultivados com amor e respeito ao meio ambiente. Este espaço foi criado para você que valoriza os pequenos produtores, o cuidado com a natureza e o prazer genuíno de comer com consciência.
+            
+            No Verde Raiz, cada produto carrega uma história—uma conexão profunda com a terra que sustenta a vida. Navegue por nossos conteúdos, descubra receitas inspiradoras e sinta-se parte de uma comunidade que aposta na vitalidade e na autenticidade dos alimentos naturais.
+            
+            Sinta-se em casa e permita que a energia e a simplicidade da natureza transformem a sua experiência.</p>
+        <p>Aqui você encontra o melhor da terra: frutas e verduras orgânicas, de qualidade superior e livres de agrotóxicos!</p>
+
+        <div>
+            <span class="badge rounded-pill text-bg-success">Laranja</span>
+            <span class="badge rounded-pill text-bg-success">Banana</span>
+            <span class="badge rounded-pill text-bg-success">Tangerina</span>
+            <span class="badge rounded-pill text-bg-success">melancia</span>
+            <span class="badge rounded-pill text-bg-success">Uva</span>
+            <span class="badge rounded-pill text-bg-success">Tomate</span>
+            <span class="badge rounded-pill text-bg-success">Repolho</span>
+            <span class="badge rounded-pill text-bg-success">ALface</span>
+            <span class="badge rounded-pill text-bg-success">Batata-doce</span>
+            <span class="badge rounded-pill text-bg-success">Cenoura</span>
+            <span class="badge rounded-pill text-bg-success">Soja</span>
+            <span class="badge rounded-pill text-bg-success">Milho</span>
+            <span class="badge rounded-pill text-bg-success">Feijão</span>
+            <span class="badge rounded-pill text-bg-success">Trigo</span>
+            <span class="badge rounded-pill text-bg-success">Hortelã</span>
+            <span class="badge rounded-pill text-bg-success">Café</span>
+            <span class="badge rounded-pill text-bg-success">Café</span>
+            <span class="badge rounded-pill text-bg-success">Manjericão</span>
+            <span class="badge rounded-pill text-bg-success">Manjericão-roxo</span>
+        </div>
+    </header>
+
+    <main class="container mt-3">
+        <h2>FRUTAS</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Laranja.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Laranja</h5>
+                      <p class="card-text">Adicionar descrição.</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                  <img src="Banana.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Banana</h5>
+                    <p class="card-text">Adicionar descrição.</p>
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Saiba mais</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!--Modal 1-->
+        <div class="modal" id="modal1" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Laranja</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <a href="...">Mais informações aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <!--Modal 2-->
+    <div class="modal" id="modal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Banana</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Adicionar descrição</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>

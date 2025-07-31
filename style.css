@@ -1,0 +1,13 @@
+:root{
+    --cor-principal: #4CAF50;
+    --cor-segundaria:  #8B4513;
+}
+
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: var(--cor-principal);
+}
+h1, h2, h5{
+    color: var(--cor-segundaria);
+    font-weight: 700;
+}
